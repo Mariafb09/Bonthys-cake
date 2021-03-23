@@ -1,0 +1,458 @@
+﻿
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Chronicle Display Black', serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { 
+font-family: 'Open Sans', sans-serif; 
+}
+/*asignacion de propiedad display: block; a etiquetas de estructura*/
+header, main, section, footer, aside, figure, figcaption, nav, div {display: block; }
+
+/*quitar margen*/
+body, h1, h2, h3, h4, h5, h6, figure, img { margin: 0;}
+
+/*css*/
+/*Aside boton de ws reutilizable*/
+aside#boton-whatsapp {
+width: 45px;
+height: 45px;
+margin: 0;
+float: none;
+position: fixed;
+right: 15px;
+bottom: 15px;
+z-index: 99998;
+
+}
+aside#boton-whatsapp a { 
+width: 45px;
+height: auto;
+display: block;
+margin: 0;
+float: none;
+position: relative;
+display: block;
+background: #00bb2d;
+border-radius: 50%;
+text-align: center;
+transition: all 0.3s ease-in;
+padding: 10px 0;
+
+}
+aside#boton-whatsapp a, i { 
+font-size: 1.3em;
+line-height: 1em;
+color: #fff;
+transition: all 0.3s ease-in;
+
+}
+aside#boton-whatsapp a:hover {
+background: #000;
+transition: all 0.3s ease-in; 
+}
+aside#boton-whatsapp a:hover i {
+color: #00bb2d;
+transition: all 0.3s ease-in;
+}
+
+
+/* Componente Menú movil responsive reutilizable*/
+aside#menu-moviles { 
+ width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: #350a5d;
+}
+aside#menu-moviles a#abrir-menu {
+ width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: block; text-decoration: none; color: #fff; background: #f3114f; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover{ 
+background: #350a5d; 
+transition: all 0.3s ease-in
+}
+aside#menu-moviles a#abrir-menu i:hover{}
+
+aside#menu-moviles a#cerrar-menú{ 
+width: 35px; height: auto; margin: 0; float: none; position: absolute; top: 25px; left: -35px; display: none; text-decoration: none; color: #fff; background: #f3114f; font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;
+}
+
+aside#menu-moviles a#cerrar-menu:hover{ background: #350a5d; transition: all 0.3s ease-in;  }
+
+aside#menu-moviles nav{width: 60%; height: auto; margin: 15% auto; float: none; position: relative;  }
+aside#menu-moviles nav a{width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;  }
+aside#menu-moviles nav a:hover{color: #f3114f; transition: all 0.3s ease-in; }
+
+/* Componente Header con Logo y Menú */
+header { 
+width: 100%; margin: 0; float: none; position: relative; left: 0; top: 0; z-index: 99990; overflow: hidden; background: url('../img/header definitivo.jpg') no-repeat bottom center fixed #111; background-size: cover; 
+}
+header.no-sticky { sticky: 500px; }
+header.sticky { bottom: 150px; }
+
+header.capa-superior{
+position: fixed;
+sticky: 150px;
+}
+
+header article { 
+width: 1000px;
+height: 80%;
+margin: 0 auto;
+float: none;
+position: relative;
+}
+
+header article figure { 
+width: 152px;
+height: 60%;
+margin: 0 auto;
+float: left;
+position: relative;
+top: 30px;
+}
+header article figure a { 
+width: 100%;
+height: auto;
+margin: 0 auto;
+float: none;
+position: relative;
+display: block;
+}
+header article figure a img {
+width: auto;
+height: 120px;
+margin: 0 auto;
+float: none;
+position: relative;
+display: block;
+border: 50%;
+top: -200px;
+}
+
+header article nav {
+width: 308px;
+height: 40px;
+left: -80px;
+margin: 0 auto;
+float: right;
+position: relative;
+top: -180px;
+
+}
+header article nav a {
+width: auto;
+height: auto;
+margin: auto;
+float: left;
+top: 130%;
+position: relative;
+text-decoration: none;
+color: white;
+left: 40px;
+font-weight: 700;
+font-size: 1em;
+ line-height: 1em; 
+ text-align: center;
+ padding: 6px 10px;
+
+ transition: all 0.3s ease-in;
+}
+
+header article nav a:hover { 
+color:#B63C82; 
+border-bottom: solid 2px #B63C82; 
+transition: all 0.3s ease-in; 
+}
+
+header div#capa-superior div#titular { width: 1100px; height: auto; margin: 28vh auto; float: none; position: relative;text-align: center; left:80px; }
+header div#capa-superior div#titular h1 { text-align: center; font-size: 2em; color: #fff; line-height: 1em; font-weight: 400; text-align: center; left:80px;}
+/* Caja Main */
+main {  position: relative;
+width: 100%; 
+height: auto; 
+margin: 120px auto 0; 
+float: none; 
+}
+main, h1{
+ text-align: center; 
+ margin: 1rem 1rem;
+ width: 100%; 
+height: auto; 
+
+ color:#B63C82
+
+}
+
+
+/* Componente Presentación */
+main section#empresa { 
+width: 100%; 
+height: auto; 
+margin: 0 auto 90px; 
+float: none; 
+position: relative;
+}
+main section#empresa div#ancla-empresa{
+	width: 100%; 
+height: 1px; 
+margin: 0; 
+float: none; 
+position: absolute; 
+top: -120px; 
+left: 0;
+}
+main section#empresa article {
+width: 1100px; 
+height: 520px; 
+margin: 0 auto; 
+float: none; 
+position: relative;
+}
+main section#empresa article figure { 
+width: 520px; 
+height: 520px; 
+margin: 0 100px 0 0; 
+float: left; 
+position: relative;
+}
+main section#empresa article figure img {width: 100%; 
+height: auto; 
+margin: 0 auto; 
+float: none; 
+position: relative; 
+display: block;  }
+main section#empresa article div#info-empresa { 
+width: 480px; 
+height: 520px; 
+margin: 0; 
+float: right; 
+position: relative;
+}
+main section#empresa article div#info-empresa h2 { 
+text-decoration: none; 
+color: #002c50; 
+font-weight: 500; 
+font-size: 1.85em; 
+line-height: 1em; t
+ext-align: left; 
+padding: 65px 0 20px; 
+letter-spacing: -0.02em;
+}
+main section#empresa article div#info-empresa h1 { 
+text-decoration: none; 
+color: #353a5d; 
+font-weight: 800; 
+font-size: 3.8em; 
+line-height: 1em; 
+text-align: left; 
+padding: 0 0 30px; 
+letter-spacing: -0.02em; }
+main section#empresa article div#info-empresa p {
+color: #333; 
+font-weight: 400; 
+font-size: 1.05em; 
+line-height: 1.45em; 
+text-align: left; 
+padding: 0 52px 30px 0; 
+letter-spacing: 0.015em;
+}
+main section#empresa article div#info-empresa a { 
+ width: 120px; 
+ height: auto; 
+ margin: 0; 
+ float: none; 
+ position: relative; 
+ display: block; 
+ text-decoration: none; 
+ color: #fff; 
+ background: #f3114f; 
+ font-weight: 600; 
+ font-size: 1em; 
+ line-height: 1em; 
+ text-align: center; 
+ padding: 12px 22px; 
+ border-radius: 25px; 
+ transition: all 0.3s ease-in;}
+
+main section#empresa article div#info-empresa a:hover{
+padding: 12px 25px; 
+color: #f3114f; 
+background: #350a5d; 
+transition: all 0.3s ease-in; 
+}
+
+
+
+/* 2 Columnas reutilizable */
+
+main section#servicios	{
+width: 100%; 
+height: auto; 
+margin: 0 auto 90px; 
+float: none; 
+position: relative;
+}
+main section#servicios div#ancla-servicios 	{
+width: 100%; 
+height: 1px; 
+margin: 0; 
+float: none; 
+position: absolute; 
+top: -120px; 
+left: 0;}
+main section#servicios article	{
+width: 1100px; 
+height: 230px; 
+margin: 0 auto; 
+float: none; 
+position: relative;
+}
+main section#servicios article figure {
+ width: 230px; 
+ height: 230px; 
+ margin: 0 60px 0 0; 
+ float: left; 
+ position: relative; 
+}
+main section#servicios article figure:last-child {
+margin: 0;
+}
+main section#servicios article figure:nth-child(4) {
+margin: 0;
+}
+main section#servicios article figure img {
+width: auto; 
+height: 195px; 
+margin: 0 auto 25px; 
+float: none; 
+position: relative; 
+display: block;
+}
+main section#servicios article figure h3 {
+ color: #350a5d; 
+ font-weight: 700; 
+ font-size: 1.35em; 
+ line-height: 1em; 
+ text-align: center; 
+ padding: 0 0 20px; 
+}
+main section#servicios article figure p	{
+color: #333; 
+font-weight: 400; 
+font-size: 1em; 
+line-height: 1.45em; 
+text-align: center; 
+padding: 0; 
+letter-spacing: 0.015em;
+}
+
+
+/* Footer con 4 columnas reutilizable */
+footer{
+width: 100%; 
+height: auto; 
+margin: 0 auto; 
+float: none; 
+position: relative; 
+background: #C681C9; 
+text-align: center;
+}
+footer div#ancla-footer {
+width: 100%; 
+height: 1px; 
+margin: 0; 
+float: none;
+position: absolute; 
+top: -120px; 
+left: 0;
+}
+footer article{width: 1100px; 
+height: auto; 
+margin: 0 auto; 
+float: none; 
+position: relative; 
+padding: 90px 0; 
+}
+footer article div#superior-footer{width: 100%; 
+height: 200px; 
+margin: 0 auto 30px; 
+float: none; 
+position: relative;
+}
+footer article div#superior-footer div.cajas-footer{
+width: 230px; 
+height: 200px; 
+margin: 0 60px 0 0; 
+float: left; 
+position: relative;
+}
+footer article div#superior-footer div.cajas-footer:last-child {
+margin: 0;
+}
+
+footer article div#superior-footer div.cajas-footer img{
+width: auto; 
+height: 50px; 
+margin: 0 0 15px; 
+display: block; 
+float: none; 
+position: relative;
+}
+
+
+
+
+
+
+/* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    aside#menu-moviles { display: block; }
+
+
+    main section#empresa { height: auto; }
+    main section#empresa article { width: 80%; height: auto; }
+    main section#empresa article figure { width: 100%; height: 340px; margin: 0 auto; float: none; }
+    main section#empresa article figure img { width: auto; height: 300px; top: 45px; }
+    main section#empresa article div#info-empresa { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#empresa article div#info-empresa h2,
+    main section#empresa article div#info-empresa h1,
+    main section#empresa article div#info-empresa p { text-align: center; }
+    main section#empresa article div#info-empresa p { margin: 0 auto; float: none; padding: 0 0 15px; }
+    main section#empresa article div#info-empresa a { margin: 10px auto 0 auto; float: none; width: 150px; text-align: center; }
+
+
+    main section#servicios article { width: 80%; height: auto; }
+    main section#servicios article figure { margin: 0 auto 40px; float: none; }
+    main section#servicios article figure:last-child { margin: 0 auto; }
+
+
+    footer article { width: 80%; }
+    footer article div#superior-footer { height: auto; }
+    footer article div#superior-footer div.cajas-footer { height: auto; margin: 0 auto 60px; float: none; }
+    footer article div#superior-footer div.cajas-footer img { margin: 0 auto 15px; float: none; }
+    footer article div#superior-footer div.cajas-footer p { text-align: center; padding: 0; }
+    footer article div#superior-footer div.cajas-footer h6 { text-align: center; }
+    footer article div#superior-footer div.cajas-footer nav#links-redes { width: 168px; height: 41px; margin: 0 auto; float: none; }
+    footer article div#superior-footer div.cajas-footer:last-child { margin: 0 auto 40px; }
+}
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+
+
